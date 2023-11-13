@@ -1,0 +1,19 @@
+<div class="card" style="background-color: whitesmoke;">
+    <div class="card-body">
+        <p>
+            <strong>ID :</strong> {{cat.id}}&nbsp;
+            <strong>Name :</strong> {{cat.name}}&nbsp;
+            <strong>Breed :</strong> {{cat.breed}}&nbsp;
+            <strong>Country :</strong> {{cat.country}}
+        </p>
+    </div>
+    <div>
+        <h2>Cat Details</h2>
+        <p>ID: {{ cat.id }}</p>
+        <p>Name: {{ cat.name }}</p>
+        <p>Breed: {{ cat.breed }}</p>
+        <p>Country: {{ cat.country }}</p>
+ 
+        <button (click)="editCat(cat.id)" class="btn btn-primary editer">Edit</button>
+      
+</div>

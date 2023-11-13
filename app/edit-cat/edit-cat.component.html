@@ -1,0 +1,18 @@
+<!-- edit-cat.component.html -->
+<form (ngSubmit)="saveCat()" class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="cat.name" required>
+  
+    <label for="breed">Breed:</label>
+    <input type="text" id="breed" name="breed" [(ngModel)]="cat.breed" required>
+  
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" [(ngModel)]="cat.country" required>
+  
+    <button type="submit">Save</button>
+    <input type="text" id="name"  class="form-control"name="name" [(ngModel)]="cat.name" required>
+
+<a [routerLink]="['/edit-cat', cat.id]">Edit Cat</a>
+
+  </form>
+  
